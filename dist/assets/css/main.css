@@ -188,7 +188,7 @@ body {
   font-family: "Open Sans", "OpenSans", "Arial", "Helvetica", sans-serif;
   color: #AAA;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 170%;
 }
 
@@ -196,11 +196,12 @@ p {
   margin: 18px 0;
 }
 
+footer .inner,
 header .inner,
-section .inner,
-footer .inner {
+section .inner {
   max-width: 1080px;
   margin: 0 auto;
+  text-align: center;
 }
 
 header nav {
