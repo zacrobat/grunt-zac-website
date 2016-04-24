@@ -1,0 +1,36 @@
+body {
+    font-family: $font-stack;
+    color: $paragraph-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+}
+p {
+    margin: 18px 0;
+}
+footer,
+header,
+section {
+    .inner {
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+}
+header {
+    nav {
+        margin: 20px;
+        ul {
+            padding-left: 0;
+            li {
+                display: block;
+                a {
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}
+footer {}
+#landing {
+    // Here goes styling which will only apply to the landing page, to div#landing
+}
