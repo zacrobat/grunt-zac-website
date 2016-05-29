@@ -14,8 +14,8 @@ footer,
 header,
 section {
     .inner {
-        max-width: 1080px;
-        // min-width: 320px; check on this
+        // max-width: 1080px;
+        min-width: 320px;
         margin: 0 auto;
         text-align: center;
     }
