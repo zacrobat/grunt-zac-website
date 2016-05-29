@@ -3,7 +3,9 @@ body {
     color: $paragraph-color;
     font-weight: 400;
     font-size: 16px;
-    line-height: 170%;
+    line-height: 150%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     background-color: #000;
 }
 p {
