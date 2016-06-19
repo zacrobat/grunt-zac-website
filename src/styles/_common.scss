@@ -7,6 +7,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #000;
+    // margin: 0 auto;
 }
 p {
     margin: 18px 0;
@@ -26,20 +27,20 @@ img {
     width: 100%;
     height: auto;
 }
-header {
-    nav {
-        margin: 20px;
-        ul {
-            padding-left: 0;
-            li {
-                display: block;
-                a {
-                    line-height: 20px;
-                }
-            }
-        }
-    }
-}
+// header {
+//     nav {
+//         margin: 20px;
+//         ul {
+//             padding-left: 0;
+//             li {
+//                 display: block;
+//                 a {
+//                     line-height: 20px;
+//                 }
+//             }
+//         }
+//     }
+// }
 footer {}
 #landing {
     // Here goes styling which will only apply to the landing page, to div#landing

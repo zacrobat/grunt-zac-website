@@ -213,21 +213,9 @@ img {
   height: auto;
 }
 
-header nav {
-  margin: 20px;
-}
-header nav ul {
-  padding-left: 0;
-}
-header nav ul li {
-  display: block;
-}
-header nav ul li a {
-  line-height: 20px;
-}
-
-body {
-  margin: 0;
+nav {
+  min-width: 320px;
+  margin: 0 auto;
 }
 
 ul.topnav {
