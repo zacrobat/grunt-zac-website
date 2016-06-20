@@ -17,15 +17,20 @@ ul.topnav li {
 }
 ul.topnav li a {
     display: inline-block;
-    color: #CBE8FF;
+    color: $color-cool;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 16px;
     text-decoration: none;
     transition: 0.3s;
     font-size: 17px;
+    border: 1px solid $color-cool;
+    // margin-top: 8px;
+    margin: 8px 4px;
+    // border-radius: 5px;
 }
 ul.topnav li a:hover {
-    background-color: #111;
+    color: $color-warm;
+    border-color: $color-warm;
 }
 ul.topnav li.icon {
     display: none;

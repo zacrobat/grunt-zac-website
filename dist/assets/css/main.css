@@ -233,14 +233,17 @@ ul.topnav li a {
   display: inline-block;
   color: #CBE8FF;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 16px;
   text-decoration: none;
   transition: 0.3s;
   font-size: 17px;
+  border: 1px solid #CBE8FF;
+  margin: 8px 4px;
 }
 
 ul.topnav li a:hover {
-  background-color: #111;
+  color: #CA531B;
+  border-color: #CA531B;
 }
 
 ul.topnav li.icon {
