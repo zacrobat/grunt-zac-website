@@ -45,3 +45,18 @@ footer {}
 #landing {
     // Here goes styling which will only apply to the landing page, to div#landing
 }
+footer {
+    position: fixed;
+    bottom: 20px;
+}
+.footer-image {
+    // display: block;
+    // margin-left: auto;
+    // margin-right: auto;
+    // width: 100%;
+}
+@media screen and (max-width:680px) {
+    // img {
+    //     width: 1000px;
+    // }
+}

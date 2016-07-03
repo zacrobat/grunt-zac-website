@@ -213,13 +213,18 @@ img {
   height: auto;
 }
 
+footer {
+  position: fixed;
+  bottom: 20px;
+}
+
 .fa-bars:before {
   font-size: 1.5em;
 }
 
 ul.topnav {
   list-style-type: none;
-  margin: 0 16px;
+  margin: 16px;
   padding: 0;
   overflow: hidden;
   background-color: transparent;
