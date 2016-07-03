@@ -34,6 +34,7 @@ ul.topnav li a:hover {
 }
 ul.topnav li.icon {
     display: none;
+    line-height: 22px;
 }
 @media screen and (max-width:680px) {
     ul.topnav li:not(:first-child) {
