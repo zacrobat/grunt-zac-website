@@ -45,7 +45,8 @@ footer {}
 #landing {
     // Here goes styling which will only apply to the landing page, to div#landing
 }
-footer {
+.footer-image {
+    display: block;
     position: fixed;
     bottom: 20px;
 }

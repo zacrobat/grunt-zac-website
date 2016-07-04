@@ -213,7 +213,8 @@ img {
   height: auto;
 }
 
-footer {
+.footer-image {
+  display: block;
   position: fixed;
   bottom: 20px;
 }
