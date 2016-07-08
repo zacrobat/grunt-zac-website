@@ -185,8 +185,8 @@ td, th {
 }
 
 body {
-  font-family: "Open Sans", "OpenSans", "Arial", "Helvetica", sans-serif;
-  color: #CA531B;
+  font-family: "Space Mono", "monospace", "OpenSans", "Arial", "Helvetica", sans-serif;
+  color: #CBE8FF;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
