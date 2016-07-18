@@ -27,11 +27,19 @@ ul.topnav li a {
     // margin-top: 8px;
     margin: 8px 4px;
     // border-radius: 5px;
+    &:hover {
+        color: $color-warm;
+        border-color: $color-warm;
+    }
+    &.activenav {
+        color: $color-warm;
+        border-color: $color-warm;
+    }
 }
-ul.topnav li a:hover {
-    color: $color-warm;
-    border-color: $color-warm;
-}
+// ul.topnav li a:hover {
+//     color: $color-warm;
+//     border-color: $color-warm;
+// }
 ul.topnav li.icon {
     display: none;
     line-height: 22px;

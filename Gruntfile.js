@@ -83,11 +83,9 @@ module.exports = function(grunt) {
       options: {
         map: false,
         processors: [
-          require('pixrem')(),
           require('autoprefixer')({
-            browsers: ['> 1% in BE']
+            browsers: ['> 1%']
           }),
-          require('cssnano')()
         ]
       },
       dist: {

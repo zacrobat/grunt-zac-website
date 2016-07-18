@@ -246,8 +246,11 @@ ul.topnav li a {
   border: 1px solid #CBE8FF;
   margin: 8px 4px;
 }
-
 ul.topnav li a:hover {
+  color: #CA531B;
+  border-color: #CA531B;
+}
+ul.topnav li a.activenav {
   color: #CA531B;
   border-color: #CA531B;
 }
