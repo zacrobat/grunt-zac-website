@@ -3,71 +3,71 @@
 //     margin: 0 auto;
 // }
 .fa-bars:before {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 ul.topnav {
-    list-style-type: none;
-    margin: 16px;
-    padding: 0;
-    overflow: hidden;
-    background-color: transparent;
+  list-style-type: none;
+  margin: 16px;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
 }
 ul.topnav li {
-    float: left;
+  float: left;
 }
 ul.topnav li a {
-    display: inline-block;
-    color: $color-cool;
-    text-align: center;
-    padding: 10px 16px;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 17px;
-    border: 1px solid $color-cool;
-    // margin-top: 8px;
-    margin: 8px 4px;
-    // border-radius: 5px;
-    &:hover {
-        color: $color-warm;
-        border-color: $color-warm;
-    }
-    &.activenav {
-        color: $color-warm;
-        border-color: $color-warm;
-    }
+  display: inline-block;
+  color: $color-cool;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+  border: 1px solid $color-cool;
+  // margin-top: 8px;
+  margin: 8px 4px;
+  // border-radius: 5px;
+  &:hover {
+    color: $color-warm;
+    border-color: $color-warm;
+  }
+  &.activenav {
+    color: $color-warm;
+    border-color: $color-warm;
+  }
 }
 // ul.topnav li a:hover {
 //     color: $color-warm;
 //     border-color: $color-warm;
 // }
 ul.topnav li.icon {
+  display: none;
+  line-height: 22px;
+}
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {
     display: none;
-    line-height: 22px;
+  }
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
 }
 @media screen and (max-width:680px) {
-    ul.topnav li:not(:first-child) {
-        display: none;
-    }
-    ul.topnav li.icon {
-        float: right;
-        display: inline-block;
-    }
-}
-@media screen and (max-width:680px) {
-    ul.topnav.responsive {
-        position: relative;
-    }
-    ul.topnav.responsive li.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    ul.topnav.responsive li {
-        float: none;
-        display: inline;
-    }
-    ul.topnav.responsive li a {
-        display: block;
-        text-align: left;
-    }
+  ul.topnav.responsive {
+    position: relative;
+  }
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
 }

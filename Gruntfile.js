@@ -29,11 +29,11 @@ module.exports = function(grunt) {
       },
       js: {
         files: ['src/js/**/*.js'],
-        tasks: ['jshint', 'concat', 'uglify']
+        tasks: ['js']
       },
       gruntfile: {
         files: ['Gruntfile.js'],
-        tasks: ['handlebarslayouts', 'sass', 'jshint', 'concat', 'uglify']
+        tasks: ['build']
       },
       options: {
         livereload: true,
@@ -105,23 +105,23 @@ module.exports = function(grunt) {
       }
     },
 
-    uglify: {
-      dist: {
-        files: {
-          'temp/main.min.js': ['src/js/main.js']
-        }
-      }
-    },
-
     concat: {
       options: {
         separator: ';\n\n',
       },
       dist: {
         files: {
-          'dist/assets/js/main.min.js': ['src/js/vendor/jquery.min.js', 'temp/main.min.js']
+          'dist/assets/js/main.js': ['src/js/vendor/jquery.min.js', 'src/js/main.js']
         },
       },
+    },
+
+    uglify: {
+      dist: {
+        files: {
+          'dist/assets/js/main.min.js': ['dist/assets/js/main.js']
+        }
+      }
     },
 
     clean: {
@@ -194,8 +194,8 @@ module.exports = function(grunt) {
 
   // commands
   grunt.registerTask('default', ['build', 'serve']);
-  grunt.registerTask('build', ['clean:dist', 'copy', 'handlebarslayouts', 'sass', 'postcss', 'jshint', 'uglify', 'concat', 'clean:temp']);
+  grunt.registerTask('js', ['jshint', 'concat', 'uglify']);
   grunt.registerTask('serve', ['connect', 'watch']);
-  // grunt.registerTask('sitemap', ['xml_sitemap']);
+  grunt.registerTask('build', ['clean:dist', 'copy', 'handlebarslayouts', 'sass', 'postcss', 'js', 'clean:temp']);
 
 };
