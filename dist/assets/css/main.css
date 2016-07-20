@@ -200,9 +200,10 @@ p {
   text-align: center;
 }
 
-footer .inner,
-header .inner,
-section .inner {
+footer > div,
+header > div,
+section > div {
+  max-width: 1080px;
   min-width: 320px;
   margin: 0 auto;
   text-align: center;
@@ -219,77 +220,154 @@ img {
   bottom: 20px;
 }
 
-.fa-bars:before {
-  font-size: 1.5em;
-}
-
-ul.topnav {
+header ul {
   list-style-type: none;
   margin: 16px;
   padding: 0;
   overflow: hidden;
   background-color: transparent;
 }
-
-ul.topnav li {
+header ul li {
   float: left;
 }
-
-ul.topnav li a {
+header ul li.icon {
+  display: none;
+  line-height: 22px;
+}
+header ul li a {
   display: inline-block;
   color: #CBE8FF;
   text-align: center;
   padding: 10px 16px;
   text-decoration: none;
-  transition: 0.3s;
   font-size: 17px;
   border: 1px solid #CBE8FF;
   margin: 8px 4px;
 }
-ul.topnav li a:hover {
+header ul li a:hover {
   color: #CA531B;
   border-color: #CA531B;
 }
-ul.topnav li a.activenav {
+header ul li a.active {
   color: #CA531B;
   border-color: #CA531B;
 }
 
-ul.topnav li.icon {
+header ul li.icon {
   display: none;
-  line-height: 22px;
+}
+header ul li.icon i.fa-bars {
+  line-height: 21px;
+  transform: translateY(3px);
+  font-size: 1.5em;
 }
 
 @media screen and (max-width: 680px) {
-  ul.topnav li:not(:first-child) {
+  header ul li:not(:first-child) {
     display: none;
   }
 
-  ul.topnav li.icon {
+  header ul li.icon {
     float: right;
     display: inline-block;
   }
 }
 @media screen and (max-width: 680px) {
-  ul.topnav.responsive {
+  header ul.responsive {
     position: relative;
   }
 
-  ul.topnav.responsive li.icon {
+  header ul.responsive li.icon {
     position: absolute;
     right: 0;
     top: 0;
   }
 
-  ul.topnav.responsive li {
+  header ul.responsive li {
     float: none;
     display: inline;
   }
 
-  ul.topnav.responsive li a {
+  header ul.responsive li a {
     display: block;
     text-align: left;
   }
+}
+#landing-page header nav ul a.landing-page {
+  color: #CA531B;
+  border-color: #CA531B;
+}
+#landing-page main #hero {
+  height: 100vh;
+}
+#landing-page main #hero > div {
+  padding: 200px 20px;
+}
+#landing-page main #hero h1 {
+  font-size: 20px;
+}
+#landing-page main #features h1 {
+  font-size: 20px;
+}
+
+#work-page header nav ul a.work-page {
+  color: #CA531B;
+  border-color: #CA531B;
+}
+#work-page main #hero {
+  height: 100vh;
+}
+#work-page main #hero > div {
+  padding: 200px 20px;
+}
+#work-page main #hero h1 {
+  font-size: 20px;
+}
+#work-page main #features h1 {
+  font-size: 20px;
+}
+#work-page footer {
+  color: green;
+}
+
+#about-page header nav ul a.about-page {
+  color: #CA531B;
+  border-color: #CA531B;
+}
+#about-page main #hero {
+  height: 100vh;
+}
+#about-page main #hero > div {
+  padding: 200px 20px;
+}
+#about-page main #hero h1 {
+  font-size: 20px;
+}
+#about-page main #features h1 {
+  font-size: 20px;
+}
+#about-page footer {
+  color: green;
+}
+
+#contact-page header nav ul a.contact-page {
+  color: #CA531B;
+  border-color: #CA531B;
+}
+#contact-page main #hero {
+  height: 100vh;
+}
+#contact-page main #hero > div {
+  padding: 200px 20px;
+}
+#contact-page main #hero h1 {
+  font-size: 20px;
+}
+#contact-page main #features h1 {
+  font-size: 20px;
+}
+#contact-page footer {
+  color: green;
 }
 
 /*# sourceMappingURL=main.css.map */
