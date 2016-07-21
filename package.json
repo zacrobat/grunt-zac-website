@@ -1,9 +1,9 @@
 {
-  "name": "sam-art",
+  "name": "grunt-zac-website",
   "version": "0.0.0",
   "repository": {
     "type": "git",
-    "url": "git@github.com:zacrobat/sam-art.git"
+    "url": "git@github.com:zacrobat/grunt-zac-website.git"
   },
   "private": true,
   "copyright": "",
